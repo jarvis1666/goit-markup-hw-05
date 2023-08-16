@@ -119,7 +119,8 @@
           </ul>
         </div>
       </section>
-  `    <!-- Section 3 -->
+      `
+      <!-- Section 3 -->
       <section class="images">
         <div class="container">
           <h2 class="work-name">What are we doing</h2>
@@ -190,8 +191,8 @@
                   </li>
                   <li class="social-contact-fone">
                     <a class="social-contact-link" href="">
-                     <svg class="social-contact-icon" width="16" height="16">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
+                      <svg class="social-contact-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -232,14 +233,13 @@
                   </li>
                   <li class="social-contact-fone">
                     <a class="social-contact-link" href="">
-                     <svg class="social-contact-icon" width="16" height="16">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
+                      <svg class="social-contact-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
                     </a>
                   </li>
                 </ul>
               </div>
-              
             </li>
             <li class="team-section">
               <img
@@ -275,14 +275,13 @@
                   </li>
                   <li class="social-contact-fone">
                     <a class="social-contact-link" href="">
-                     <svg class="social-contact-icon" width="16" height="16">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
+                      <svg class="social-contact-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
                     </a>
                   </li>
                 </ul>
               </div>
-             
             </li>
             <li class="team-section">
               <img
@@ -318,14 +317,13 @@
                   </li>
                   <li class="social-contact-fone">
                     <a class="social-contact-link" href="">
-                     <svg class="social-contact-icon" width="16" height="16">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
+                      <svg class="social-contact-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
                     </a>
                   </li>
                 </ul>
               </div>
-              
             </li>
           </ul>
         </div>
@@ -384,8 +382,6 @@
     <!-- Footer section -->
     <footer class="foter">
       <div class="container ftr">
-        
-      
         <div class="ftr-text">
           <a class="web link logo-footer" href="./index.html"
             >Web<span class="studio-footer">Studio</span></a
@@ -421,13 +417,32 @@
             </li>
             <li class="social-contact-fone-ftr">
               <a class="social-contact-link-ftr" href="">
-               <svg class="social-contact-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-linkedin"></use>
+                <svg class="social-contact-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
+        <form class="foter-form" name="foter" autocomplete="on">
+          <div class="foter-form-block">
+            <label class="foter-form-label"
+              >Subscribe<input
+                class="foter-form-email"
+                type="email"
+                name="email_ftr"
+                placeholder="E-mail"
+                required
+              />
+            </label>
+            <button type="submit" class="foter-form-but">
+              Subscribe
+              <svg class="foter-form-icon-send" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
     <!--модальне вікно-->
@@ -438,6 +453,63 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <form name="modal_window" autocomplete="on">
+          <p class="modal-header">
+            Leave your contacts and we will call you back
+          </p>
+          <div class="modal-input-container">
+            <label class="modal-input-text">
+              Name
+              <input
+                class="modal-input"
+                type="text"
+                name="name"
+                autofocus
+              /> </label
+            ><svg class="modal-input-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </div>
+          <div class="modal-input-container">
+            <label class="modal-input-text">
+              Phone
+              <input class="modal-input" type="tel" name="phone" />
+            </label>
+            <svg class="modal-input-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+          <div class="modal-input-container">
+            <label class="modal-input-text">
+              Email
+              <input class="modal-input" type="email" name="email" /> </label
+            ><svg class="modal-input-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </div>
+          <div class="modal-input-container">
+            <label class="modal-input-text">
+              Comment
+              <textarea
+                class="modal-input-textarea"
+                name="Comment"
+                cols=""
+                rows="7"
+                placeholder="Text input"
+              ></textarea>
+            </label>
+          </div>
+          <label class="modal-checkbox">
+            <input type="checkbox" name="user_agreement" />
+            <span class="modal-checkbox-text"
+              >I accept the terms and conditions of the
+              <a href="" target="_blank" rel="noopener noreferrer"
+                >Privacy Policy</a
+              ></span
+            >
+          </label>
+          <button class="modal-form-button" type="submit">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
