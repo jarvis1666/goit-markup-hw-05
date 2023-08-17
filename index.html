@@ -424,10 +424,11 @@
             </li>
           </ul>
         </div>
-        <form class="foter-form" name="foter" autocomplete="on">
-          <div class="foter-form-block">
+        <div class="foter-form">
+          <p class="foter-form-text">Subscribe</p>
+          <form class="foter-form-block" name="foter" autocomplete="on">
             <label class="foter-form-label"
-              >Subscribe<input
+              ><input
                 class="foter-form-email"
                 type="email"
                 name="email_ftr"
@@ -441,8 +442,8 @@
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </footer>
     <!--модальне вікно-->
@@ -453,78 +454,85 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="modal-header">
+          Leave your contacts and we will call you back
+        </p>
         <form name="modal_window" autocomplete="on">
-          <p class="modal-header">
-            Leave your contacts and we will call you back
-          </p>
           <div class="modal-input-container">
-            <label class="modal-input-text" for="user-name">
-              Name
+            <label class="modal-input-text" for="user-name"> Name</label>
+            <div class="modal-input-container-icon">
               <input
                 class="modal-input"
                 type="text"
                 name="user-name"
                 id="user-name"
                 autofocus
-              /> </label
-            ><svg class="modal-input-icon" width="18" height="18">
-              <use href="./images/icons.svg#icon-person"></use>
-            </svg>
+              />
+              <svg class="modal-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
           </div>
           <div class="modal-input-container">
-            <label class="modal-input-text" for="user-phone">
-              Phone
+            <label class="modal-input-text" for="user-phone"> Phone</label>
+            <div class="modal-input-container-icon">
               <input
                 class="modal-input"
                 type="tel"
                 name="user-phone"
                 id="user-phone"
               />
-            </label>
-            <svg class="modal-input-icon" width="18" height="18">
-              <use href="./images/icons.svg#icon-phone"></use>
-            </svg>
+              <svg class="modal-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
           </div>
           <div class="modal-input-container">
-            <label class="modal-input-text" for="user-email">
-              Email
+            <label class="modal-input-text" for="user-email"> Email</label>
+            <div class="modal-input-container-icon">
               <input
                 class="modal-input"
                 type="email"
                 name="user-email"
                 id="user-email"
-              /> </label
-            ><svg class="modal-input-icon" width="18" height="18">
-              <use href="./images/icons.svg#icon-email"></use>
-            </svg>
+              />
+              <svg class="modal-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
           </div>
-          <div class="modal-input-container">
-            <label class="modal-input-text">
-              Comment
-              <textarea
-                class="modal-input-textarea"
-                name="Comment"
-                cols="1"
-                rows="7"
-                placeholder="Text input"
-              ></textarea>
-            </label>
+          <div class="modal-input-container-textarea">
+            <label class="modal-input-text" for="user-comment"> Comment</label>
+            <textarea
+              class="modal-input-textarea"
+              name="Comment"
+              cols="1"
+              rows="7"
+              placeholder="Text input"
+              id="user-comment"
+            ></textarea>
           </div>
-          <div class="">
-            <label class="modal-checkbox-text"
+          <div class="checkbox-container">
+            <!--поставить дефолтний клас винпут нижче -->
+            <input
+              class="modal-checkbox-wind is-hidden"
+              type="checkbox"
+              name="user-privacy"
+              id="ustr-privacy"
+              value="true"
+            />
+            <label class="modal-checkbox-text" for="user-privacy"
               ><span class="modal-checkbox">
                 <svg class="modal-checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-ok"></use>
                 </svg>
               </span>
-              <input
-                class="modal-checkbox-wind"
-                type="checkbox"
-                name="user_agreement"
-              />
-
               I accept the terms and conditions of the
-              <a href="" target="_blank" rel="noopener noreferrer"
+              <a
+                class="modal-checkbox-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
                 >Privacy Policy</a
               ></label
             >
